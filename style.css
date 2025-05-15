@@ -1,89 +1,113 @@
-/* General Page Styling */
+/* Reset and Base Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://raw.githubusercontent.com/dtalwar511/synqron-website/main/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header Section */
 header {
-    background: #1e90ff;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
 }
 
 .logo {
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-/* Section Styling */
+h1 {
+  font-size: 1.8em;
+  color: #1e90ff;
+  margin: 0 0 10px;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1e90ff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+}
+
+.navbar a:hover {
+  background-color: #007acc;
+  border-radius: 4px;
+}
+
+main {
+  padding: 20px;
+}
+
 section {
-    padding: 25px;
-    margin: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings */
 h2 {
-    color: #1e90ff;
-    margin-bottom: 15px;
+  color: #1e90ff;
+  margin-top: 0;
 }
 
-/* Tables */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-table, th, td {
-    border: 1px solid #ccc;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
 th, td {
-    padding: 10px;
-    text-align: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
 th {
-    background-color: #f0f8ff;
-}
-
-/* Notes & Paragraph Styling */
-.note {
-    font-style: italic;
-    color: #555;
-    margin-top: 10px;
+  background-color: #f0f8ff;
+  font-weight: bold;
 }
 
 ul {
-    list-style-type: disc;
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
-/* Navigation Links (Library of Technical Insights) */
-section ul li a {
-    text-decoration: none;
-    color: #1e90ff;
+ul li {
+  margin-bottom: 8px;
 }
 
-section ul li a:hover {
-    text-decoration: underline;
+.top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #eee;
-    font-size: 0.95em;
+.top-button:hover {
+  background-color: #007acc;
 }
